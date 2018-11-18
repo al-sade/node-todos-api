@@ -12,4 +12,4 @@ mongoose.connect(`mongodb://alsade:Alaba1616@ds057000.mlab.com:57000/als-todo-ap
 
 module.exports = {
     mongoose
-}
+};

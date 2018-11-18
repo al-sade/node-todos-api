@@ -7,7 +7,6 @@ var {Todo} =require('./models/todo');
 var {User} =require('./models/user');
 
 var app = express();
-const port = process.env.port || 3000;
 
 app.use(bodyParse.json());
 
@@ -53,6 +52,6 @@ app.get('/todos/:id', (req, res) => {
 
 });
 
-app.listen(port, () => {
+app.listen(process.env.port || 3000, () => {
     console.log(`Server is running on: ${port}`);
 });
